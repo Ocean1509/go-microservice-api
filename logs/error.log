@@ -1,0 +1,4 @@
+[Error Log]2021/09/20 06:40:34 migrationlogger.go:12: Applying database migrations%!(EXTRA []interface {}=[])
+[Error Log]2021/09/20 06:40:34 migrationlogger.go:12: Active database version: [1]
+[Error Log]2021/09/20 06:40:44 migrationlogger.go:12: Applying database migrations%!(EXTRA []interface {}=[])
+[Error Log]2021/09/20 06:40:44 migrationlogger.go:12: Active database version: [1]

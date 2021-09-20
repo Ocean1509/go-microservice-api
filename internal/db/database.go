@@ -12,11 +12,8 @@ import (
 	_ "github.com/golang-migrate/migrate/source/file"
 )
 
-func CreateDatabase() (*sql.DB, error) {
-	serverName := "localhost:3306"
-	user := "myuser"
-	password := "pw"
-	dbName := "demo"
+
+func CreateDatabase(serverName string, user string, password string, dbName string) (*sql.DB, error) {
 
 	connectionString := fmt.Sprintf("%s:%s@tcp(%s)/%s?charset=utf8mb4&collation=utf8mb4_unicode_ci&parseTime=true&multiStatements=true", user, password, serverName, dbName)
 	db, err := sql.Open("mysql", connectionString)
